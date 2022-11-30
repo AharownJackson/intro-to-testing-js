@@ -50,4 +50,38 @@ describe('isFive', function() {
     it(`should return false when passed the string "5"`, function () {
         expect(isFive("5")).toBe(false);
     });
-})
+});
+
+// unit tests for function isEven
+describe('isEven', function () {
+    it(`should be a defined function`, function () {
+        expect(typeof isEven).toBe('function');
+    });
+    it(`should return a boolean no matter the input`, function () {
+        expect(typeof isEven()).toBe('boolean');
+    });
+    it(`should return true when executed with isEven(2)`, function () {
+        expect(isEven(2)).toBe(true);
+    });
+    it(`should return true when executed with isEven(-4)`, function () {
+        expect(isEven(-4)).toBe(true);
+    });
+    it(`should return false when executed with isEven(3)`, function () {
+        expect(isEven(3)).toBe(false);
+    });
+    it(`should return false when called with isEven("banana")`, function () {
+        expect(isEven("banana")).toBe(false);
+    });
+    it(`should return true when called with isEven("8")`, function () {
+        expect(isEven("8")).toBe(true);
+    });
+    it(`should return false when called with isEven(Infinity)`, function () {
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it(`should return false when called with a boolean input like isEven(true) or isEven(false)`, function () {
+        expect(isEven('boolean')).toBe(false);
+    });
+    it(`should return false when called without an argument like isEven()`, function () {
+        expect(isEven()).toBe(false);
+    });
+});
