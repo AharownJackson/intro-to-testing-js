@@ -31,4 +31,7 @@ describe('sayHello', function() {
     it(`should return "Hello, Pat!" when passed the string "Pat"`, function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it(`should return "Hello, World!" when passed the string "World"`, function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
 });
