@@ -135,12 +135,12 @@ describe(`add`, function () {
         expect(add("-4", "10")).toBe(6);
     });
     it(`add("banana", "split") returns NaN`, function () {
-        expect(add("banana", "split")).toBe(NaN);
+        expect(add("banana", "split")).toBeNaN();
     });
     it(`add(2, "apples") returns NaN`, function () {
-        expect(add(2, "apples")).toBe(NaN);
+        expect(add(2, "apples")).toBeNaN();
     });
     it(`add() returns NaN`, function () {
-        expect(add()).toBe(NaN);
+        expect(add()).toBeNaN();
     });
 });

@@ -43,6 +43,14 @@ function add(input1, input2) {
 }
 
 
+// function add(input1, input2) {
+//     if (Number(input1) === false || Number(input1) === false) {
+//         return NaN;
+//     } else {
+//         return Number(input1) + Number(input2);
+//     }
+// }
+
 
 
 
