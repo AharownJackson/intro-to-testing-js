@@ -17,3 +17,33 @@ function isFive(input){
 function isEven(input) {
     return input % 2 == 0;
 }
+
+// isVowel function
+function isVowel(input) {
+    if (typeof input !== 'string') {
+        return false;
+        } else if (input.toLowerCase() === "a" ||
+            input.toLowerCase() === "e" ||
+            input.toLowerCase() === "i" ||
+            input.toLowerCase() === "o" ||
+            input.toLowerCase() === "u") {
+            return true;
+        } else {
+        return false;
+    }
+}
+
+// add function
+function add(input1, input2) {
+    if (isNaN(input1) || isNaN(input2)) {
+        return NaN;
+    } else {
+        return Number(input1) + Number(input2);
+    }
+}
+
+
+
+
+
+
